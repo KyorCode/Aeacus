@@ -2,7 +2,7 @@
   "name": "charon",
   "version": "0.0.0",
   "description": "Javascript Full Stack Event Mastery",
-  "main": "index.js",
+  "main": "srv/index.js",
   "scripts": {
     "test": "test"
   },
