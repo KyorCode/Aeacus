@@ -4,7 +4,7 @@ var markdown = require('gulp-markdown');
 gulp.task('docs', function () {
     gulp.src('README.md')
         .pipe(markdown())
-    pipe(gulp.dest('docs'));
+        .pipe(gulp.dest('docs'));
 });
 
-gulp.task('default',['docs']);
+gulp.task('default', ['docs']);
