@@ -1,0 +1,23 @@
+{
+    "name": "charon",
+    "version": "0.0.0",
+    "description": "Javascript Full Stack Event Mastery",
+    "main": "index.js",
+    "scripts": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KyorCode/charon.git"
+    },
+    "keywords": [
+        "javascript",
+        "full stack event"
+    ],
+    "author": "KyorCode (t-c@live.be)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/KyorCode/charon/issues"
+    },
+    "homepage": "https://github.com/KyorCode/charon"
+}
