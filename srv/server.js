@@ -1,4 +1,5 @@
 var configmanager = require('./configmanager');
+var configSettings = require('./configsettings');
 var innerServer;
 
 
@@ -9,7 +10,8 @@ exports.boot = function (app) {
         next();
     });
 
-    var cfg = configmanager.resolveConfig('local');
+    var cfgManager = new configmanager(configSettings);
+    var cfg = cfgManager.resolveConfig('local');
     innerServer = app.listen(cfg.port, cfg.address, function () {
         console.log('Server booted! - ' + cfg.resolvePath());
     });
