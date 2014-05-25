@@ -11,6 +11,6 @@ exports.boot = function (app) {
 
     var cfg = configmanager.resolveConfig('local');
     innerServer = app.listen(cfg.port, cfg.address, function () {
-        console.log('Server booted! - ' + cfg.path);
+        console.log('Server booted! - ' + cfg.resolvePath());
     });
 };
