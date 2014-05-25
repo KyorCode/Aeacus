@@ -1,5 +1,5 @@
 {
-  "name": "charon",
+  "name": "kharon",
   "version": "0.0.0",
   "description": "Javascript Full Stack Event Mastery",
   "main": "srv/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/KyorCode/charon.git"
+    "url": "https://github.com/KyorCode/kharon.git"
   },
   "keywords": [
     "javascript",
@@ -17,9 +17,9 @@
   "author": "KyorCode (t-c@live.be)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KyorCode/charon/issues"
+    "url": "https://github.com/KyorCode/kharon/issues"
   },
-  "homepage": "https://github.com/KyorCode/charon",
+  "homepage": "https://github.com/KyorCode/kharon",
   "devDependencies": {
     "gulp": "~3.6.2",
     "npm-check-updates": "~1.2.0",
