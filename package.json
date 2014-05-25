@@ -23,7 +23,8 @@
   "devDependencies": {
     "gulp": "~3.6.2",
     "npm-check-updates": "~1.2.0",
-    "gulp-markdown": "~0.1.2"
+    "gulp-markdown": "~0.1.2",
+    "gulp-mocha": "~0.4.1"
   },
   "dependencies": {
     "express": "~4.3.0"
