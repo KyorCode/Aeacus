@@ -1,14 +1,11 @@
 var configmanager = require('./configmanager');
 var configSettings = require('./configsettings');
+var router = require('./router');
 var innerServer;
 
 
 exports.boot = function (app) {
-    app.use(function (err, req, res, next) {
-        if (err)
-            console.log(err);
-        next();
-    });
+    router.CreateNew(app);
 
     var cfgManager = new configmanager(configSettings);
     var cfg = cfgManager.resolveConfig('local');
