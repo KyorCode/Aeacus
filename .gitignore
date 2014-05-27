@@ -3,3 +3,10 @@
 node_modules
 bower_components
 docs
+srv/scripts/libs
+public/css
+public/libs
+public/app
+srv/styles/foundation
+srv/styles/_foundation-icons.scss
+srv/styles/normalize.scss
