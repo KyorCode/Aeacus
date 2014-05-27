@@ -7,6 +7,6 @@ srv/scripts/libs
 public/css
 public/libs
 public/app
-srv/styles/foundation
+srv/styles/foundation/components
 srv/styles/_foundation-icons.scss
 srv/styles/normalize.scss
