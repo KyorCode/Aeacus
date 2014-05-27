@@ -17,4 +17,9 @@ gulp.task('mocha', function () {
             }));
 });
 
+gulp.task('bower', function () {
+    bower()
+        .pipe(gulp.dest('./srv/scripts/libs/'));
+});
+
 gulp.task('default', ['docs']);
