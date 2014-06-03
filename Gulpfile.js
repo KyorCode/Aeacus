@@ -43,13 +43,17 @@ gulp.task('bower', function () {
 });
 
 gulp.task('compass-app', function () {
-    gulp.src('./srv/styles/Styles.scss')
+    gulp.src([
+        './srv/styles/Styles.scss',
+        './srv/styles/normalize.scss',
+        './srv/styles/foundation.scss'
+    ])
         .pipe(compass({
             css: './public/css',
             sass: './srv/styles',
             image: './public/img'
         }))
-        .pipe(minifyCss())
+//        .pipe(minifyCss())
         .pipe(gulp.dest('./public/css'));
 });
 
@@ -64,9 +68,15 @@ gulp.task('move-foundation', function () {
         .pipe(gulp.dest('./srv/styles'));
     gulp.src([
         './bower_components/foundation-icon-fonts/*.ttf',
-        './bower_components/foundation-icon-fonts/*.woff'
+        './bower_components/foundation-icon-fonts/*.woff',
+        './bower_components/foundation-icon-fonts/*.eot',
+        './bower_components/foundation-icon-fonts/*.svg'
     ])
         .pipe(gulp.dest('./public/css'));
+});
+
+gulp.task('watch-compass', function () {
+    gulp.watch(['./srv/styles/*.scss', './srv/styles/foundation/_settings.scss', '!./srv/styles/*foundation*.scss', '!./srv/styles/normalize.scss'], ['compass']);
 });
 
 gulp.task('compass', ['move-foundation', 'compass-app']);
