@@ -35,8 +35,8 @@
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
-// $total-columns: 12;
+$row-width: rem-calc(1366);
+$total-columns: 12;
 
 // Global
 
@@ -72,7 +72,7 @@ $body-font-family: 'Open Sans', sans-serif;
 // $shiny-edge-color: rgba(#fff, .5);
 // $shiny-edge-active-color: rgba(#000, .2);
 
-// $column-gutter: rem-calc(30);
+// $column-gutter: rem-calc(5);
 
 // Media Query Ranges
 // $small-range: (0em, 40em);
@@ -943,13 +943,13 @@ $body-font-family: 'Open Sans', sans-serif;
 // We use these to control list styles.
 // $side-nav-list-type: none;
 // $side-nav-list-position: inside;
-// $side-nav-list-margin: rem-calc(0 0 7 0);
+// $side-nav-list-margin: rem-calc(0 0 15 0);
 
 // We use these to control link styles.
-//$side-nav-link-color: $navFontColor;
+// $side-nav-link-color: $navFontColor;
 // $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
-//$side-nav-font-size: rem-calc(20);
+// $side-nav-font-size: rem-calc(30);
 // $side-nav-font-weight: normal;
 // $side-nav-font-weight-active: $side-nav-font-weight;
 // $side-nav-font-family: $body-font-family;
