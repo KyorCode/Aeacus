@@ -42,7 +42,7 @@ $total-columns: 12;
 
 // We use these to control various global styles
 //$body-bg: #FCFCFC;
-//$body-font-color: $fontColor;
+$body-font-color: $fontColor;
 $body-font-family: 'Open Sans', sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -123,7 +123,7 @@ $body-font-family: 'Open Sans', sans-serif;
 // $header-font-family: $body-font-family;
 // $header-font-weight: normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color:$fontColor;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -499,7 +499,7 @@ $body-font-family: 'Open Sans', sans-serif;
 // $include-html-form-classes: $include-html-classes;
 
 // We use this to set the base for lots of form spacing and positioning styles
-// $form-spacing: rem-calc(16);
+//$form-spacing: rem-calc(16);
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;

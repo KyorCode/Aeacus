@@ -1,3 +1,14 @@
 @import "Variables";
 @import "foundation/functions";
 
+body{
+  background-color: $bgColor;
+}
+
+.logo{
+  font-size: rem-calc(60);
+}
+
+.columns{
+  min-height: 1px;
+}
