@@ -21,16 +21,16 @@
   },
   "homepage": "https://github.com/KyorCode/kharon",
   "devDependencies": {
-    "gulp": "~3.6.2",
+    "gulp": "~3.8.5",
     "npm-check-updates": "~1.2.0",
     "gulp-markdown": "~0.1.2",
     "gulp-mocha": "~0.4.1",
-    "must": "~0.11.0",
+    "must": "~0.12.0",
     "gulp-compass": "~1.1.9",
-    "gulp-minify-css": "~0.3.4"
+    "gulp-minify-css": "~0.3.6"
   },
   "dependencies": {
-    "express": "~4.3.1",
+    "express": "~4.4.5",
     "express-dot": "~0.1.0"
   }
 }

@@ -19,6 +19,7 @@
         "bower_components"
     ],
     "dependencies": {
+        "ember": "~1.5.1",
         "foundation": "~5.2.2",
         "foundation-icon-fonts": "zurb/foundation-icon-fonts"
     }
