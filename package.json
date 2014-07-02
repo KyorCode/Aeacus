@@ -27,7 +27,10 @@
     "gulp-mocha": "~0.4.1",
     "must": "~0.12.0",
     "gulp-compass": "~1.1.9",
-    "gulp-minify-css": "~0.3.6"
+    "gulp-minify-css": "~0.3.6",
+    "gulp-concat": "~2.2.0",
+    "gulp-jshint": "~1.6.4",
+    "gulp-ember-handlebars": "~0.6.0"
   },
   "dependencies": {
     "express": "~4.4.5",

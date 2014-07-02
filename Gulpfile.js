@@ -3,7 +3,9 @@ var markdown = require('gulp-markdown');
 var mocha = require('gulp-mocha');
 var bower = require('gulp-bower');
 var compass = require('gulp-compass');
-var minifyCss = require('gulp-minify-css');
+var concat = require('gulp-concat');
+var emberHandleBars = require('gulp-ember-handlebars');
+var jshint = require('gulp-jshint');
 
 
 gulp.task('default', ['docs']);
@@ -86,3 +88,34 @@ gulp.task('move-libs', function () {
     gulp.src(sources.libs)
         .pipe(gulp.dest('./public/libs'))
 });
+
+gulp.task('concat-app', function () {
+    gulp.src(sources.app)
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('./public/app/'));
+});
+
+gulp.task('template', function () {
+    gulp.src(['./srv/scripts/app/templates/**/*.hbs'])
+        .pipe(emberHandleBars({
+            outputType: 'browser'
+        }))
+        .pipe(concat('templates.js'))
+        .pipe(gulp.dest('./public/app/'));
+});
+
+gulp.task('jshint', function () {
+    gulp.src(['./lib/*.js', './test/*.js'])
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+
+gulp.task('build', [
+    'docs',
+    'bower',
+    'compass',
+    'jshint',
+    'move-libs',
+    'template',
+    'concat-app'
+])
