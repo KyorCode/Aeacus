@@ -16,8 +16,9 @@ var sources = {
         './srv/scripts/libs/foundation/js/foundation.js',
         './srv/scripts/libs/fastclick/lib/fastclick.js',
         './srv/scripts/libs/jquery/dist/jquery.js',
-        './srv/scripts/libs/jquery/jquery.cookie.js',
-        './srv/scripts/libs/jquery/jquery.placeholder.js'
+        './srv/scripts/libs/jquery.cookie/jquery.cookie.js',
+        './srv/scripts/libs/handlebars/handlebars.js',
+        './srv/scripts/libs/ember/ember.js'
     ],
     app: ['./srv/scripts/app/***.js']
 };
