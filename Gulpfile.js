@@ -118,4 +118,12 @@ gulp.task('build', [
     'move-libs',
     'template',
     'concat-app'
-])
+]);
+
+gulp.task('build-client-app',[
+   'bower',
+    'jshint',
+    'move-libs',
+    'template',
+    'concat-app'
+]);
