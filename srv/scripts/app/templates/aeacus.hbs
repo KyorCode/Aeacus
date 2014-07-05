@@ -1,7 +1,25 @@
-<header class="row">
+<header class="row modal">
+
+    <div class="large-8 columns">
+
+    </div>
+    <div class="large-3 columns text-right">
+        <span class="fi-male"></span>
+        tom.ceuppens.bvba@gmail.com
+    </div>
+    <div class="large-1 columns text-right">
+        <span class="fi-power"></span>
+        Logout
+    </div>
 
 </header>
 
-<section class="row">
+<section class="row modal">
+    <section class="large-1 medium-3 columns">
+        {{render 'aeacus.nav'}}
+    </section>
 
+    <section class="large-11 medium-9 columns">
+        {{outlet}}
+    </section>
 </section>

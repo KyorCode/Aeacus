@@ -1,14 +1,30 @@
 @import "Variables";
 @import "foundation/functions";
 
-body{
+body {
   background-color: $bgColor;
 }
 
-.logo{
+.logo {
   font-size: rem-calc(60);
 }
 
-.columns{
+.columns {
   min-height: 1px;
+}
+
+nav {
+
+  > ul {
+    list-style-type: none;
+    margin-left: 0;
+
+    > li{
+      padding:5px;
+    }
+
+    & [class^="fi-"] {
+      margin-right: 5px;
+    }
+  }
 }

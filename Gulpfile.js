@@ -22,7 +22,7 @@ var sources = {
         './srv/scripts/libs/handlebars/handlebars.js',
         './srv/scripts/libs/ember/ember.js'
     ],
-    app: ['./srv/scripts/app/***.js']
+    app: ['./srv/scripts/app/**/*.js']
 };
 
 gulp.task('docs', function () {
@@ -127,3 +127,7 @@ gulp.task('build-client-app',[
     'template',
     'concat-app'
 ]);
+
+gulp.task('watch-hbs',function(){
+   gulp.watch(['./srv/scripts/app/**/*.hbs'],['template']);
+});
