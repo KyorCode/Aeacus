@@ -33,7 +33,7 @@
     "gulp-ember-handlebars": "~0.6.0"
   },
   "dependencies": {
-    "express": "~4.4.5",
+    "express": "~4.5.0",
     "express-dot": "~0.1.0"
   }
 }

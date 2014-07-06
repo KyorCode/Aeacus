@@ -13,14 +13,36 @@ body {
   min-height: 1px;
 }
 
+.ember-view.active {
+  color: $fontColor;
+
+  > span {
+    display: inline-block;
+    float: right;
+  }
+}
+
 nav {
 
   > ul {
     list-style-type: none;
     margin-left: 0;
 
-    > li{
-      padding:5px;
+    > li {
+
+      > a {
+        color: lighten($fontColor, 50%);
+        display: inline-block;
+        width: 100%;
+
+        > span {
+          display: none;
+        }
+
+        &:hover {
+          color: $fontColor;
+        }
+      }
     }
 
     & [class^="fi-"] {
