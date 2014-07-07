@@ -131,3 +131,7 @@ gulp.task('build-client-app',[
 gulp.task('watch-hbs',function(){
    gulp.watch(['./srv/scripts/app/**/*.hbs'],['template']);
 });
+
+gulp.task('watch-app',function(){
+    gulp.watch(sources.app,['concat-app']);
+});
