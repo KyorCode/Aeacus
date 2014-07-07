@@ -1,32 +1,43 @@
-<header class="row modal">
+<div class="large-12 medium-12 columns">
+    <header class="row">
 
-    <div class="large-8 medium-6 columns">
-
-    </div>
-    <div class="large-3 medium-4 columns text-right">
-        <span class="fi-male"></span>
-        tom.ceuppens.bvba@gmail.com
-    </div>
-    <div class="large-1 medium-2 columns text-right">
-        <span class="fi-power"></span>
-        Logout
-    </div>
-
-</header>
-
-<section class="row modal">
-    <div class="large-12 columns">
-
-        <div class="row">
-
-            <section class="large-2 medium-2 columns">
-                {{render 'aeacus.nav'}}
-            </section>
-
-            <section class="large-10 medium-10 columns">
-                {{outlet}}
-            </section>
-
+        <div class="large-3 medium-3 columns text-right">
+            <span class="logo fi-eye"></span>
         </div>
-    </div>
-</section>
+        <div class="large-9 medium-9 columns">
+            <div class="row modal">
+                <div class="large-5 medium-3 columns">
+
+                </div>
+                <div class="large-5 medium-6 columns text-right">
+                    <span class="fi-male"></span>
+                    tom.ceuppens.bvba@gmail.com
+                </div>
+                <div class="large-2 medium-3 columns text-right">
+                    <span class="fi-power"></span>
+                    Logout
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="row">
+
+        <div class="large-3 medium-3 columns text-right">
+            {{render 'aeacus.nav'}}
+        </div>
+
+        <div class="large-9 medium-9 columns">
+
+            <div class="row modal">
+
+                <section class="large-12 medium-12 columns">
+                    {{outlet}}
+                </section>
+
+            </div>
+        </div>
+
+    </section>
+</div>
