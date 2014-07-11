@@ -1,5 +1,5 @@
-# Kharon
+# Aeacus
 
-> Hades his ferryman, he who carries the souls of the recently deceased across the river Styx and Achaaron.
+> One of the tree judges in Hades his service.
 
 Javascript full stack event mastery

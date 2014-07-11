@@ -3,7 +3,9 @@ var markdown = require('gulp-markdown');
 var mocha = require('gulp-mocha');
 var bower = require('gulp-bower');
 var compass = require('gulp-compass');
-var minifyCss = require('gulp-minify-css');
+var concat = require('gulp-concat');
+var emberHandleBars = require('gulp-ember-handlebars');
+var jshint = require('gulp-jshint');
 
 
 gulp.task('default', ['docs']);
@@ -16,10 +18,11 @@ var sources = {
         './srv/scripts/libs/foundation/js/foundation.js',
         './srv/scripts/libs/fastclick/lib/fastclick.js',
         './srv/scripts/libs/jquery/dist/jquery.js',
-        './srv/scripts/libs/jquery/jquery.cookie.js',
-        './srv/scripts/libs/jquery/jquery.placeholder.js'
+        './srv/scripts/libs/jquery.cookie/jquery.cookie.js',
+        './srv/scripts/libs/handlebars/handlebars.js',
+        './srv/scripts/libs/ember/ember.js'
     ],
-    app: ['./srv/scripts/app/***.js']
+    app: ['./srv/scripts/app/**/*.js']
 };
 
 gulp.task('docs', function () {
@@ -84,4 +87,51 @@ gulp.task('compass', ['move-foundation', 'compass-app']);
 gulp.task('move-libs', function () {
     gulp.src(sources.libs)
         .pipe(gulp.dest('./public/libs'))
+});
+
+gulp.task('concat-app', function () {
+    gulp.src(sources.app)
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('./public/app/'));
+});
+
+gulp.task('template', function () {
+    gulp.src(['./srv/scripts/app/templates/**/*.hbs'])
+        .pipe(emberHandleBars({
+            outputType: 'browser'
+        }))
+        .pipe(concat('templates.js'))
+        .pipe(gulp.dest('./public/app/'));
+});
+
+gulp.task('jshint', function () {
+    gulp.src(['./lib/*.js', './test/*.js'])
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
+});
+
+gulp.task('build', [
+    'docs',
+    'bower',
+    'compass',
+    'jshint',
+    'move-libs',
+    'template',
+    'concat-app'
+]);
+
+gulp.task('build-client-app',[
+    'bower',
+    'jshint',
+    'move-libs',
+    'template',
+    'concat-app'
+]);
+
+gulp.task('watch-hbs',function(){
+    gulp.watch(['./srv/scripts/app/**/*.hbs'],['template']);
+});
+
+gulp.task('watch-app',function(){
+    gulp.watch(sources.app,['concat-app']);
 });

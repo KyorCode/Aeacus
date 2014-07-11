@@ -1,25 +1,26 @@
 {
-    "name": "kharon",
-    "version": "0.0.0",
-    "authors": [
-        "KyorCode <t-c@live.be>"
-    ],
-    "description": "Fullstack event",
-    "moduleType": [
-        "amd"
-    ],
-    "keywords": [
-        "accounting"
-    ],
-    "license": "MIT",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components"
-    ],
-    "dependencies": {
-        "foundation": "~5.2.2",
-        "foundation-icon-fonts": "zurb/foundation-icon-fonts"
-    }
+  "name": "Aeacus",
+  "version": "0.0.0",
+  "authors": [
+    "KyorCode <t-c@live.be>"
+  ],
+  "description": "Fullstack event",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "accounting"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "foundation": "latest",
+    "foundation-icon-fonts": "latest",
+    "ember": "~1.6.0"
+  }
 }
