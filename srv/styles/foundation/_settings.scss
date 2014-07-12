@@ -41,8 +41,8 @@ $total-columns: 12;
 // Global
 
 // We use these to control various global styles
-//$body-bg: #FCFCFC;
-//$body-font-color: $fontColor;
+$body-bg: $bgColor;
+$body-font-color: $fontColor;
 $body-font-family: 'Open Sans', sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
