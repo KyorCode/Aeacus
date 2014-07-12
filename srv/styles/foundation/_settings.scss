@@ -41,8 +41,8 @@ $total-columns: 12;
 // Global
 
 // We use these to control various global styles
-//$body-bg: #FCFCFC;
-//$body-font-color: $fontColor;
+$body-bg: $bgColor;
+$body-font-color: $fontColor;
 $body-font-family: 'Open Sans', sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
@@ -123,7 +123,7 @@ $body-font-family: 'Open Sans', sans-serif;
 // $header-font-family: $body-font-family;
 // $header-font-weight: normal;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: $fontAccentColor ;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;

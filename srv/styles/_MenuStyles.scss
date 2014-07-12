@@ -1,0 +1,20 @@
+@import "Variables";
+
+.menurow + .menurow{
+  border-top: 2px dashed $fontInfoColor;
+  padding-top: 5%;
+}
+
+.menuicon {
+  font-size: 2em;
+}
+
+.menuheader {
+  color: $fontColor;
+  font-style: italic;
+}
+
+.menuinfo {
+  color: $fontInfoColor;
+  font-size: 0.8em;
+}

@@ -124,6 +124,7 @@ gulp.task('build-client-app',[
     'bower',
     'jshint',
     'move-libs',
+    'compass',
     'template',
     'concat-app'
 ]);
