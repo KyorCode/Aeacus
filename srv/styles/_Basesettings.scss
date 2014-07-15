@@ -1,3 +1,14 @@
 @import "Variables";
 @import "foundation/functions";
 
+.columns {
+  min-height: 1px;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+header {
+  background-color: $bgColor;
+}
