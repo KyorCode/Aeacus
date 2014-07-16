@@ -1,0 +1,27 @@
+@import 'Variables';
+
+.menubar {
+  margin-top: 1% !important;
+  margin-bottom: 1%;
+}
+
+.menuicon {
+  font-size: 40px;
+  padding-bottom: 1%;
+}
+
+.menutext {
+  font-size: 14px;
+  padding-top: 2%;
+}
+
+.ember-view .active {
+  color: $accentColor;
+}
+
+.ember-view {
+  color: $fontColor;
+  &:hover {
+    color: $ligthGray;
+  }
+}
