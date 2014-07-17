@@ -10,4 +10,6 @@ Aeacus.Router.map(function(){
         this.route('customers');
 
     });
+
+    this.route('settings');
 });
