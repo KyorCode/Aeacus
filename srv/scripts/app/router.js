@@ -1,7 +1,7 @@
-Aeacus.Router.map(function(){
-    this.resource('aeacus',{path : '/'},function(){
+Aeacus.Router.map(function () {
+    this.resource('aeacus', {path: '/'}, function () {
 
-        this.route('dashboard', {path:'/'});
+        this.route('dashboard', {path: '/'});
 
         this.route('calendar');
 
@@ -11,5 +11,13 @@ Aeacus.Router.map(function(){
 
     });
 
-    this.route('settings');
+    this.resource('settings', {path: '/settings'}, function () {
+
+        this.route('bankaccounts');
+        this.route('bankaccount.new', {path: '/bankaccount/new'});
+        this.resource('bankaccount', {path: '/bankaccount/:bankaccount_id'}, function () {
+            this.route('edit');
+        });
+
+    });
 });
